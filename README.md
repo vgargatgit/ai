@@ -13,17 +13,35 @@ Once GitHub Pages is enabled for this repository, the project site is:
 - Publishes five high-signal AI/ML stories per day.
 - Prioritizes major developments, deep technical advances, and practical tools/releases.
 - Keeps a dated archive in `site/data/briefings/`.
-- Uses the OpenAI Responses API with the built-in web search tool to research each edition.
-- Deploys the static site with GitHub Pages; no application server is required.
+- Uses a ChatGPT scheduled task to research each morning's briefing and commit the generated JSON directly to this repository.
+- Deploys the static site with GitHub Pages; no application server or OpenAI API key is required.
+
+## Publishing flow
+
+```text
+ChatGPT scheduled task
+        |
+        | research current AI/ML developments
+        v
+site/data/briefings/YYYY-MM-DD.json
+site/data/latest.json
+site/data/index.json
+        |
+        | commit to main
+        v
+GitHub Pages workflow
+        |
+        v
+https://vgargatgit.github.io/ai/
+```
+
+The ChatGPT task is scheduled for the morning in Asia/Kolkata and is responsible for both generating the five-story briefing and committing the content files. The Pages workflow only deploys the static `site/` directory when site content changes.
 
 ## One-time setup
 
-1. In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
-2. In **Settings → Secrets and variables → Actions**, create a repository secret named `OPENAI_API_KEY`.
-3. Do not put the API key in this repository. The daily workflow reads it only from GitHub Actions secrets.
-4. Optionally run **Actions → Daily AI briefing → Run workflow** once to test generation.
+In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
 
-The scheduled workflow runs at `02:00 UTC` each day, which is `07:30 IST`, so the refreshed edition should normally be available in the morning. GitHub cron jobs can occasionally start later than the scheduled minute.
+No `OPENAI_API_KEY` repository secret is required for the daily briefing.
 
 ## Structure
 
@@ -36,10 +54,7 @@ site/
     latest.json
     index.json
     briefings/YYYY-MM-DD.json
-scripts/
-  generate_briefing.py
 .github/workflows/
-  daily-briefing.yml
   pages.yml
 ```
 
@@ -53,14 +68,15 @@ python3 -m http.server 8000 --directory site
 
 Then open `http://localhost:8000`.
 
-## Generate locally
+## Content model
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY='...'
-python scripts/generate_briefing.py
-```
+Each daily edition contains exactly five ranked stories plus:
 
-You can override the model with `OPENAI_MODEL`.
+- a concise cross-story `signal`
+- a technical `whyItMatters` explanation for each story
+- an attention label and level
+- a credible source name and HTTPS URL
+- topical tags
+- a final cross-story `takeaway`
+
+The site renders generated story text as text rather than trusted HTML.
