@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A daily high-signal briefing on AI/ML research, models, tools, and engineering.">
+  <meta name="color-scheme" content="dark">
+  <title>AI Daily Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="AI Daily Briefing home">
+      <span class="brand-mark">AI</span>
+      <span>
+        <strong>Daily Briefing</strong>
+        <small>Research · Models · Tools · Engineering</small>
+      </span>
+    </a>
+    <nav class="header-actions" aria-label="Briefing navigation">
+      <button id="archive-toggle" class="ghost-button" type="button" aria-expanded="false" aria-controls="archive-panel">Archive</button>
+      <a class="ghost-button" href="https://github.com/vgargatgit/ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="masthead" aria-labelledby="edition-title">
+      <p class="eyebrow">THE FIVE STORIES WORTH YOUR ATTENTION</p>
+      <h1 id="edition-title">AI/ML Daily Brief</h1>
+      <div class="edition-meta">
+        <span id="edition-date">Loading today’s edition…</span>
+        <span aria-hidden="true">•</span>
+        <span id="edition-time">Morning IST</span>
+      </div>
+    </section>
+
+    <section id="status" class="status" role="status">Loading briefing…</section>
+
+    <section id="signal-card" class="signal-card" hidden>
+      <div class="signal-label">TODAY’S SIGNAL</div>
+      <p id="signal-text"></p>
+    </section>
+
+    <section id="stories" class="stories" aria-label="Top AI stories"></section>
+
+    <section id="takeaway" class="takeaway" hidden>
+      <div class="takeaway-kicker">THE THREAD CONNECTING TODAY</div>
+      <h2>What to carry forward</h2>
+      <p id="takeaway-text"></p>
+    </section>
+  </main>
+
+  <aside id="archive-panel" class="archive-panel" aria-label="Briefing archive" aria-hidden="true">
+    <div class="archive-head">
+      <div>
+        <p class="eyebrow">ARCHIVE</p>
+        <h2>Past briefings</h2>
+      </div>
+      <button id="archive-close" class="icon-button" type="button" aria-label="Close archive">×</button>
+    </div>
+    <div id="archive-list" class="archive-list"></div>
+  </aside>
+  <div id="archive-backdrop" class="archive-backdrop" hidden></div>
+
+  <footer>
+    <p>Five high-signal stories. No endless feed.</p>
+    <p>Generated from current web sources; verify critical decisions with the linked originals.</p>
+  </footer>
+
+  <noscript>This site needs JavaScript to load the daily briefing.</noscript>
+  <script src="./app.js" defer></script>
+</body>
+</html>
