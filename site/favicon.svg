@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>AI learning logo</title>
+  <desc>Round document, circuit, and signal logo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0a1d46"/>
+      <stop offset="100%" stop-color="#0a2e73"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#57d8ff"/>
+      <stop offset="100%" stop-color="#1db8ff"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d48b5"/>
+      <stop offset="100%" stop-color="#09348d"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#cyan)" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="122 24" transform="rotate(-18 32 32)"/>
+  <path d="M23 18h15l7 7v13.5A4.5 4.5 0 0 1 40.5 43H31.8l-4.3 4.1V43H23a4.5 4.5 0 0 1-4.5-4.5v-16A4.5 4.5 0 0 1 23 18Z" fill="url(#paper)"/>
+  <path d="M38 18v6.5a1.5 1.5 0 0 0 1.5 1.5H46" fill="#2067da"/>
+  <rect x="22.6" y="22" width="10.8" height="1.9" rx="0.95" fill="#4fa8ff" opacity="0.9"/>
+  <rect x="22.6" y="26.3" width="10.8" height="1.9" rx="0.95" fill="#4fa8ff" opacity="0.9"/>
+  <rect x="34.8" y="27.5" width="7.2" height="5.4" rx="1.1" fill="url(#cyan)"/>
+  <rect x="33" y="35.2" width="9.3" height="1.7" rx="0.85" fill="#2d86f3"/>
+  <rect x="33" y="38.7" width="9.3" height="1.7" rx="0.85" fill="#2d86f3"/>
+  <path d="M23.7 43v-9.5" stroke="url(#cyan)" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="23.7" cy="31.8" r="1.8" fill="#0b347e" stroke="url(#cyan)" stroke-width="1.6"/>
+  <path d="M27.6 43v-6.2" stroke="url(#cyan)" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="27.6" cy="35.1" r="1.1" fill="#30c8ff"/>
+  <path d="M31 30.8v10.5h5.2" stroke="#dff7ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="31" cy="31.5" r="1.8" fill="#0b347e" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="37.8" cy="41.4" r="1.9" fill="#0b347e" stroke="#ffffff" stroke-width="1.8"/>
+  <path d="M39.2 17.1c4.2.8 7.7 4 8.9 8.1" fill="none" stroke="url(#cyan)" stroke-width="2.1" stroke-linecap="round" stroke-dasharray="11 100"/>
+  <path d="M39.6 14.4c5.8 1.1 10.5 5.5 12.1 11.2" fill="none" stroke="url(#cyan)" stroke-width="1.9" stroke-linecap="round" stroke-dasharray="16 100"/>
+  <path d="M40.2 11.6c7.3 1.3 13.2 6.9 15.2 14" fill="none" stroke="url(#cyan)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="22 100"/>
+</svg>
