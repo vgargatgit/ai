@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-12",
+  "displayDate": "Wednesday, August 12, 2026",
+  "edition": "8:00 AM IST edition",
+  "generatedAt": "2026-08-12T08:23:33+05:30",
+  "signal": "Today’s strongest signal is that the AI stack is hardening around runtime engineering: open-model inference is getting dedicated infrastructure, agent skills are gaining execution-time assurance, security incidents are moving toward structured reporting, provenance is becoming machine-readable, and GUI agents are being treated as software systems that need recovery, observability and lifecycle discipline.",
+  "stories": [
+    {
+      "rank": 1,
+      "title": "IBM and Together AI commit $240M to a Blackwell inference cluster for open models",
+      "summary": "IBM and Together AI signed a $240 million multi-year agreement to build a large AI inference cluster on IBM Cloud. The initial U.S. deployment is planned around roughly 2,000 Nvidia Blackwell 300 chips using HGX B300 systems and Spectrum-X networking, with Together AI expecting capacity to be booked before the cluster is ready. The service is aimed at running open models such as DeepSeek, MiniMax and Kimi at enterprise scale.",
+      "whyItMatters": "This is a concrete sign that inference is becoming its own infrastructure market rather than a secondary phase after training. For engineering teams, the important design questions shift toward model routing, batching, KV-cache strategy, network topology, utilization and cost per useful token. Open-weight models become more viable in enterprises when the serving layer is available as managed capacity rather than a bespoke GPU project.",
+      "attention": "Very high — open-model inference infrastructure",
+      "attentionLevel": "red",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/ibm-together-ai-ink-240-million-deal-nvidia-powered-ai-inference-cluster-2026-08-11/",
+      "tags": ["Inference", "Open models", "Nvidia", "Infrastructure"]
+    },
+    {
+      "rank": 2,
+      "title": "SkillSentry adds runtime assurance around reusable agent skills",
+      "summary": "A new paper proposes SkillSentry, a runtime-assurance layer for LLM-agent skills. It represents skill procedures in a small DSL, combines the written skill specification with traces from previous successful and failed executions, and monitors the agent loop to keep execution aligned with the intended procedure. Across 15 skills and multiple Claude Code and Codex model pairings, the authors report an average 24.1% improvement in task success with lower run-to-run variability.",
+      "whyItMatters": "Skills are increasingly treated as reusable packages of procedural knowledge, but today they are mostly prompt-level guidance. SkillSentry points toward a stronger architecture: convert critical procedures into runtime-checkable constraints, learn from execution traces, and keep the model inside an auditable control loop. That is much closer to how reliable workflow engines and distributed systems are engineered.",
+      "attention": "Very high — agent runtime reliability",
+      "attentionLevel": "red",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.09253",
+      "tags": ["Agents", "Runtime assurance", "Skills", "Reliability"]
+    },
+    {
+      "rank": 3,
+      "title": "Open Secure AI Alliance proposes a shared incident-reporting layer for AI agents",
+      "summary": "The Open Secure AI Alliance is developing the Shared AI Findings Exchange, or SAFE, a proposed framework for recording and reporting serious AI-agent security incidents. Axios reports that participating organizations would preserve detailed evidence and report cases such as unauthorized access to third-party systems, exposure of confidential information, or continued probing after an operator suspects the activity is unauthorized. The proposal is currently in a Linux Foundation-hosted request-for-comments process.",
+      "whyItMatters": "Agent failures are starting to look less like isolated model bugs and more like security incidents in distributed systems. A common incident schema could make postmortems, cross-company learning and forensic tooling much more useful. Teams building autonomous systems should already retain tool-call logs, identity and authorization context, environment state and action outcomes so an incident can be reconstructed later.",
+      "attention": "High — agent incident standardization",
+      "attentionLevel": "amber",
+      "sourceName": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "tags": ["Agent security", "Incident response", "Governance", "Observability"]
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic moves Claude outputs toward machine-readable provenance",
+      "summary": "Anthropic plans to attach machine-readable provenance signals to Claude-generated content, including C2PA metadata for images and an imperceptible watermark for text. The Verge reports that the approach will apply across Claude products and API-based deployments, with detection tooling planned for users and third parties. The change is tied in part to new EU AI transparency requirements.",
+      "whyItMatters": "Provenance is becoming an application-layer concern rather than just a policy checkbox. If generated content carries detectable origin signals, downstream systems can make trust decisions, preserve attribution, flag synthetic content or attach audit metadata. Engineers should still treat provenance as a probabilistic signal rather than proof because metadata can be stripped and watermark robustness depends on transformations.",
+      "attention": "High — content provenance moves into the stack",
+      "attentionLevel": "amber",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
+      "tags": ["Provenance", "Watermarking", "Claude", "C2PA"]
+    },
+    {
+      "rank": 5,
+      "title": "A 336-paper review argues GUI agents need software-engineering discipline, not just better models",
+      "summary": "A new review of 336 GUI-agent papers finds that architectures are converging on modular perceive-reason-act loops, but recovery, human escalation, safety enforcement, auditability, privacy engineering and post-release maintenance remain underdeveloped. Evaluations are becoming more interactive, yet still focus heavily on task success and are difficult to compare across protocols.",
+      "whyItMatters": "The paper frames GUI agents as closed-loop software systems rather than benchmark demos. That is the right production mental model: the model is one component inside a system that also needs deterministic permissions, retries, recovery paths, telemetry, cost controls, test environments and human escalation. Capability gains alone do not make an agent deployable.",
+      "attention": "High — production architecture for GUI agents",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.09278",
+      "tags": ["GUI agents", "Software engineering", "Evaluation", "Reliability"]
+    }
+  ],
+  "takeaway": "Treat agent systems as production runtimes, not prompts wrapped around models. Invest in serving efficiency, explicit execution contracts, trace retention, incident reconstruction, provenance signals, recovery paths and human escalation. The durable advantage is increasingly the engineering layer that makes powerful models observable, controllable and economical."
+}
