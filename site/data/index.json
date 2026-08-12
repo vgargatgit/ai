@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-12",
+      "displayDate": "Wednesday, August 12, 2026",
+      "signal": "Today’s strongest signal is that the AI stack is hardening around runtime engineering: open-model inference is getting dedicated infrastructure, agent skills are gaining execution-time assurance, security incidents are moving toward structured reporting, provenance is becoming machine-readable, and GUI agents are being treated as software systems that need recovery, observability and lifecycle discipline."
+    },
+    {
       "date": "2026-08-11",
       "displayDate": "Tuesday, August 11, 2026",
       "signal": "Today’s strongest signal is that AI engineering is splitting into two simultaneous races: make capable models cheaper and more deployable, while making agent execution more constrained, inspectable, and reliable. Open weights, specialized cyber access, massive inference financing, typed agent actions, and deliberate multi-model review all point toward a more modular AI stack."
