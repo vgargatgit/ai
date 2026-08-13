@@ -3,63 +3,63 @@
   "displayDate": "Thursday, August 13, 2026",
   "edition": "8:00 AM IST edition",
   "generatedAt": "2026-08-13T08:45:41+05:30",
-  "signal": "Today’s strongest signal is that the AI stack is becoming more modular and more autonomous at the same time: frontier models are being optimized for long-running work, routing layers can choose different models by stage, smaller open models are targeting specialized agent tasks, and researchers are starting to automate both agent evaluation and AI-development loops themselves.",
+  "signal": "AI is becoming a modular agent stack: longer-running models, model routers, specialized open models, and automated agent evaluation are advancing together.",
   "stories": [
     {
       "rank": 1,
-      "title": "Grok 4.6 targets long-running agents as frontier-model competition shifts toward task completion",
-      "summary": "SpaceXAI released Grok 4.6 on August 12 with an explicit focus on long-running AI agents and complex tasks. MarketWatch reports that Artificial Analysis scored it five points above Grok 4.5 on its Intelligence Index and broadly competitive with other frontier models, while the company simultaneously began beta testing Grok Bot, an autonomous teammate product designed to carry work across tools with limited supervision.",
-      "whyItMatters": "Long-horizon agent work changes what model quality means. Context management, recovery after failed actions, state persistence, tool-use reliability, latency and cost per completed task become more important than the price or benchmark score of a single inference call. Engineering teams should evaluate frontier models inside representative agent loops rather than choosing them from static leaderboards alone.",
-      "attention": "Very high — frontier model optimized for long-running agents",
+      "title": "Grok 4.6 targets long-running agents",
+      "summary": "SpaceXAI released Grok 4.6 on August 12 for long-running agents and complex tasks; MarketWatch also reports the beta launch of Grok Bot autonomous teammates.",
+      "whyItMatters": "Evaluate models on completed agent tasks, including context handling, recovery, tool reliability, latency and total cost, not only single-call benchmarks.",
+      "attention": "Very high — long-running frontier agents",
       "attentionLevel": "red",
       "sourceName": "MarketWatch",
       "sourceUrl": "https://www.marketwatch.com/story/spacexs-stock-is-getting-a-grok-fueled-boost-e99497b4",
-      "tags": ["Models", "Agents", "Grok", "Long-horizon"]
+      "tags": ["Models", "Agents", "Grok"]
     },
     {
       "rank": 2,
-      "title": "NVIDIA opens Switchyard as a routing layer between agent harnesses and model backends",
-      "summary": "NVIDIA NeMo’s Switchyard is an open-source proxy that routes LLM traffic across providers while translating OpenAI Chat, OpenAI Responses and Anthropic Messages formats. It can launch Claude Code, Codex and OpenClaw against vLLM, NVIDIA NIM, Ollama or other OpenAI-compatible backends, supports classifier-, stage- and custom-routing strategies, and records latency, token and cost statistics per request.",
-      "whyItMatters": "Model routing is becoming a first-class part of agent architecture. A routing layer lets the harness stay stable while teams send simple stages to cheaper or local models, escalate difficult or recovery stages to stronger models, A/B test providers and keep cost and latency telemetry at the boundary. That reduces provider coupling and makes model choice an operational policy rather than an application rewrite.",
-      "attention": "Very high — model routing becomes agent infrastructure",
+      "title": "NVIDIA opens Switchyard for model routing",
+      "summary": "NVIDIA NeMo’s open-source Switchyard translates OpenAI and Anthropic API formats and routes Claude Code, Codex and OpenClaw traffic across local or hosted model backends.",
+      "whyItMatters": "Routing turns model selection into platform policy, enabling cheaper models for simple stages and stronger models where capability is worth the cost.",
+      "attention": "Very high — model routing infrastructure",
       "attentionLevel": "red",
       "sourceName": "NVIDIA NeMo / GitHub",
       "sourceUrl": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "tags": ["Model routing", "Inference", "Agents", "Open source"]
+      "tags": ["Model routing", "Inference", "Agents"]
     },
     {
       "rank": 3,
-      "title": "AEROBAT automates behavioral science on AI agents at experiment scale",
-      "summary": "A new paper introduces AEROBAT, a multi-agent system that automates the behavioral-research loop for AI agents: generating hypotheses, designing controlled experiments, running simulations, assessing behavior, analyzing results and producing reports. Across 12 target behaviors, the system generated and tested 79 hypotheses using 1,240 controlled experiments and 23,512 simulation rounds, finding moderate-to-strong statistical evidence for 26 hypotheses.",
-      "whyItMatters": "As agents become persistent software components, teams need more than task-success benchmarks. AEROBAT points toward continuous behavioral testing in which hypotheses about failure modes, cooperation, bias or drift can be generated and tested systematically at scale. The same idea could evolve into regression suites for agent behavior, much as unit and integration tests became routine for deterministic software.",
-      "attention": "High — agent behavior becomes experimentally testable at scale",
+      "title": "AEROBAT automates behavioral science on AI agents",
+      "summary": "AEROBAT generated and tested 79 behavioral hypotheses through 1,240 controlled experiments and 23,512 simulation rounds across 12 target behaviors.",
+      "whyItMatters": "Behavioral regression testing could become a production discipline for persistent agents, complementing task-success benchmarks with systematic experiments on drift and failure modes.",
+      "attention": "High — scalable agent evaluation",
       "attentionLevel": "amber",
       "sourceName": "arXiv",
       "sourceUrl": "https://arxiv.org/abs/2608.10030",
-      "tags": ["Agents", "Evaluation", "Behavioral science", "Automation"]
+      "tags": ["Agents", "Evaluation", "Automation"]
     },
     {
       "rank": 4,
-      "title": "Google reshapes DeepMind around Gemini, coding performance and recursive self-improvement",
-      "summary": "Reuters reports that Google’s AI leadership reshuffle is being driven by competitive pressure around Gemini, with Sergey Brin pushing greater focus and resources toward advanced research including recursive self-improvement. The reorganization follows internal concerns about Gemini’s coding performance that contributed to delaying a flagship update, while Koray Kavukcuoglu takes operational leadership and Demis Hassabis shifts toward a chairman and long-term research role.",
-      "whyItMatters": "Coding and agent capability are now important enough to influence frontier-model release gates and the organization of major AI labs. The emphasis on recursive self-improvement also points toward tighter loops in which AI systems help design, test and improve successor systems. For application teams, that means model behavior and capability will remain fast-moving dependencies that need automated evaluations, version pinning and controlled rollout rather than blind upgrades.",
-      "attention": "High — AI R&D becomes more automated and product-coupled",
+      "title": "Google reshapes DeepMind around Gemini and recursive self-improvement",
+      "summary": "Reuters reports that Google’s AI reshuffle emphasizes Gemini, coding performance and research including recursive self-improvement, with Koray Kavukcuoglu taking operational leadership.",
+      "whyItMatters": "AI-assisted AI development and coding-driven release gates imply faster model turnover, making automated evals, version pinning and controlled rollout increasingly important.",
+      "attention": "High — automated AI R&D",
       "attentionLevel": "amber",
       "sourceName": "Reuters",
       "sourceUrl": "https://www.reuters.com/world/inside-google-executive-moves-that-led-its-big-ai-reshuffle-2026-08-12/",
-      "tags": ["Gemini", "AI R&D", "Coding", "Google DeepMind"]
+      "tags": ["Gemini", "AI R&D", "Coding"]
     },
     {
       "rank": 5,
-      "title": "NVIDIA expands its open-model stack with Nemotron 3.5 Lightning while training Nemotron 4",
-      "summary": "NVIDIA released Nemotron 3.5 Lightning for focused workloads including code review, tool use, operational monitoring and question answering, while Reuters reports that the company is also developing a Nemotron 4 family whose largest planned model is expected to reach at least one trillion parameters. NVIDIA describes the broader effort as a push to provide accessible frontier open models that enterprises and countries can customize and control.",
-      "whyItMatters": "The useful pattern is not simply another large model. NVIDIA is assembling a spectrum of models and infrastructure around specialized agent tasks, open deployment and routing. For engineering teams, that strengthens the case for heterogeneous model fleets: use smaller task-focused models where they are sufficient, reserve frontier capacity for the stages that need it, and make evaluation and routing part of the platform.",
-      "attention": "High — open model fleets become a platform strategy",
+      "title": "NVIDIA expands its open-model stack with Nemotron 3.5 Lightning",
+      "summary": "NVIDIA released Nemotron 3.5 Lightning for focused agent workloads while Reuters reports that the planned Nemotron 4 family includes a model of at least one trillion parameters.",
+      "whyItMatters": "Heterogeneous model fleets can pair task-focused models with frontier capacity, using routing and evaluation to decide where expensive capability is actually needed.",
+      "attention": "High — open model fleet strategy",
       "attentionLevel": "amber",
       "sourceName": "Reuters",
       "sourceUrl": "https://www.reuters.com/business/nvidia-is-developing-nemotron-4-open-source-models-information-reports-2026-08-11/",
-      "tags": ["Nemotron", "Open models", "NVIDIA", "Model architecture"]
+      "tags": ["Nemotron", "Open models", "NVIDIA"]
     }
   ],
-  "takeaway": "Build AI applications around replaceable model stages rather than one permanent model choice. Put routing, evaluation, behavioral regression tests, cost and latency telemetry, and versioned rollout around the model layer. The durable engineering advantage is increasingly the system that can absorb rapid model change while keeping agent behavior measurable and predictable."
+  "takeaway": "Build around replaceable model stages, with routing, behavioral evaluation, cost and latency telemetry, versioning and controlled rollout around the model layer."
 }
