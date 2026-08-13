@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-13",
+      "displayDate": "Thursday, August 13, 2026",
+      "signal": "Today’s strongest signal is that the AI stack is becoming more modular and more autonomous at the same time: frontier models are being optimized for long-running work, routing layers can choose different models by stage, smaller open models are targeting specialized agent tasks, and researchers are starting to automate both agent evaluation and AI-development loops themselves."
+    },
+    {
       "date": "2026-08-12",
       "displayDate": "Wednesday, August 12, 2026",
       "signal": "Today’s strongest signal is that the AI stack is hardening around runtime engineering: open-model inference is getting dedicated infrastructure, agent skills are gaining execution-time assurance, security incidents are moving toward structured reporting, provenance is becoming machine-readable, and GUI agents are being treated as software systems that need recovery, observability and lifecycle discipline."
