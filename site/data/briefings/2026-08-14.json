@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-14",
+  "displayDate": "Friday, August 14, 2026",
+  "edition": "8:00 AM IST edition",
+  "generatedAt": "2026-08-14T08:37:25+05:30",
+  "signal": "The AI stack is converging on agentic coding at lower cost, while the hard engineering shifts toward inference efficiency, hardware co-design, and stronger isolation around increasingly capable autonomous systems.",
+  "stories": [
+    {
+      "rank": 1,
+      "title": "Google launches Gemini 3.7 Flash for coding and agent workflows",
+      "summary": "Google released Gemini 3.7 Flash on August 13, positioning it as a lower-cost model for software coding and autonomous multi-step business workflows, with an introductory API price of $0.75 per million input tokens and $3.75 per million output tokens.",
+      "whyItMatters": "The frontier is moving toward cheaper models that can stay inside long-running tool loops. For production agents, completed-task reliability and total workflow cost are becoming more useful metrics than raw benchmark quality.",
+      "attention": "Very high — lower-cost frontier agent model",
+      "attentionLevel": "red",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/google-unveils-gemini-37-flash-ai-model-coding-agent-workflows-2026-08-13/",
+      "tags": [
+        "Gemini",
+        "Coding",
+        "Agents",
+        "Model economics"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek formally releases V4 Pro with stronger agent capabilities",
+      "summary": "DeepSeek released V4-Pro-0813 across API, app and web, saying the update substantially improves agent capabilities while introducing tiered peak and off-peak API pricing.",
+      "whyItMatters": "DeepSeek is competing on both capability and serving economics. Its support for agent-oriented workloads reinforces the case for keeping model providers replaceable and benchmarking real tool-use trajectories rather than assuming the most expensive model should own every stage.",
+      "attention": "Very high — open-model agent competition",
+      "attentionLevel": "red",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/china/deepseek-releases-official-v4-pro-model-it-steps-up-expansion-2026-08-13/",
+      "tags": [
+        "DeepSeek",
+        "Open models",
+        "Agents",
+        "Inference"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Taiwan reports an AI-assisted cyberattack on government systems",
+      "summary": "Taiwan said attackers used a hybrid of manual operations and AI-agent assistance in a July campaign against government agencies; investigators said the incident came from overseas and affected units successfully contained it.",
+      "whyItMatters": "This is the shift security teams have been preparing for: AI agents can compress reconnaissance, credential discovery and exploitation into faster operational loops. Defensive systems need machine-speed detection, strong identity boundaries, detailed tool telemetry and rapid containment.",
+      "attention": "Very high — AI-assisted attacks move into real operations",
+      "attentionLevel": "red",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/china/taiwan-says-it-was-targeted-last-month-ai-driven-hacking-campaign-2026-08-13/",
+      "tags": [
+        "AI security",
+        "Agents",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic explores buying Decart to deepen inference and performance engineering",
+      "summary": "Anthropic is in early talks to acquire Nvidia-backed Decart AI, whose work spans AI infrastructure, optimization and world models; Reuters reports Decart's team would join Anthropic's inference and performance organization if a deal closes.",
+      "whyItMatters": "Frontier labs are increasingly pulling optimization, hardware-software co-design and model serving closer to the core model team. At scale, inference performance is becoming a strategic product capability rather than an interchangeable infrastructure layer.",
+      "attention": "High — vertical integration around inference",
+      "attentionLevel": "amber",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/",
+      "tags": [
+        "Anthropic",
+        "Inference",
+        "Performance",
+        "Infrastructure"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "KVGov isolates tenants without giving up most prefix-cache efficiency",
+      "summary": "A new arXiv paper demonstrates production-scale timing leakage from shared KV-prefix caches and proposes per-principal salted cache keys; the authors estimate a boundary-salting design can retain about 93% of prefix-cache benefit while removing cross-principal signals.",
+      "whyItMatters": "Prefix caching is an optimization with a tenant-isolation boundary hidden inside it. Multi-tenant inference platforms should treat cache identity and reuse policy as security architecture, not only performance tuning.",
+      "attention": "High — multi-tenant inference side channels",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.09225",
+      "tags": [
+        "KV cache",
+        "Inference",
+        "Security",
+        "Multi-tenancy"
+      ]
+    }
+  ],
+  "takeaway": "Design AI platforms for rapid model substitution and increasingly autonomous execution. Put routing and cost telemetry above the model layer, and put isolation, cache governance, observability and containment below it."
+}
