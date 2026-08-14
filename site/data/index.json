@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-14",
+      "displayDate": "Friday, August 14, 2026",
+      "signal": "The AI stack is converging on agentic coding at lower cost, while the hard engineering shifts toward inference efficiency, hardware co-design, and stronger isolation around increasingly capable autonomous systems."
+    },
+    {
       "date": "2026-08-13",
       "displayDate": "Thursday, August 13, 2026",
       "signal": "Today’s strongest signal is that the AI stack is becoming more modular and more autonomous at the same time: frontier models are being optimized for long-running work, routing layers can choose different models by stage, smaller open models are targeting specialized agent tasks, and researchers are starting to automate both agent evaluation and AI-development loops themselves."
