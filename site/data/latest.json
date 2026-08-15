@@ -1,89 +1,89 @@
 {
-  "date": "2026-08-14",
-  "displayDate": "Friday, August 14, 2026",
+  "date": "2026-08-15",
+  "displayDate": "Saturday, August 15, 2026",
   "edition": "8:00 AM IST edition",
-  "generatedAt": "2026-08-14T08:37:25+05:30",
-  "signal": "The AI stack is converging on agentic coding at lower cost, while the hard engineering shifts toward inference efficiency, hardware co-design, and stronger isolation around increasingly capable autonomous systems.",
+  "generatedAt": "2026-08-15T08:22:26+05:30",
+  "signal": "Frontier AI is splitting along two tracks: the most capable labs are becoming more selective about deployment as cyber risk rises, while open and agentic systems keep closing capability gaps. Meanwhile, better benchmarks and inference methods are making it clearer where agents are genuinely strong, where they still fail, and how much runtime engineering matters.",
   "stories": [
     {
       "rank": 1,
-      "title": "Google launches Gemini 3.7 Flash for coding and agent workflows",
-      "summary": "Google released Gemini 3.7 Flash on August 13, positioning it as a lower-cost model for software coding and autonomous multi-step business workflows, with an introductory API price of $0.75 per million input tokens and $3.75 per million output tokens.",
-      "whyItMatters": "The frontier is moving toward cheaper models that can stay inside long-running tool loops. For production agents, completed-task reliability and total workflow cost are becoming more useful metrics than raw benchmark quality.",
-      "attention": "Very high — lower-cost frontier agent model",
+      "title": "Anthropic withholds a stronger internal model as its risk estimate rises",
+      "summary": "Anthropic says it has no current plan to release a more powerful internal system referred to as Model 2. Its latest risk assessment still judges severe harm unlikely, but raises the estimate from very low to low amid recent cybersecurity incidents and uncertainty about the behavior of increasingly capable models.",
+      "whyItMatters": "Model deployment is becoming an engineering control, not just a product decision. Teams building with frontier agents should expect capability-gated access, stronger isolation, continuous evaluations and the possibility that the most capable model is intentionally unavailable because the surrounding safeguards are not ready.",
+      "attention": "Very high — capability is outrunning deployment confidence",
       "attentionLevel": "red",
-      "sourceName": "Reuters",
-      "sourceUrl": "https://www.reuters.com/business/google-unveils-gemini-37-flash-ai-model-coding-agent-workflows-2026-08-13/",
+      "sourceName": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/08/14/anthropic-model-2-ai-risk",
       "tags": [
-        "Gemini",
-        "Coding",
-        "Agents",
-        "Model economics"
+        "Frontier models",
+        "AI safety",
+        "Cybersecurity",
+        "Deployment"
       ]
     },
     {
       "rank": 2,
-      "title": "DeepSeek formally releases V4 Pro with stronger agent capabilities",
-      "summary": "DeepSeek released V4-Pro-0813 across API, app and web, saying the update substantially improves agent capabilities while introducing tiered peak and off-peak API pricing.",
-      "whyItMatters": "DeepSeek is competing on both capability and serving economics. Its support for agent-oriented workloads reinforces the case for keeping model providers replaceable and benchmarking real tool-use trajectories rather than assuming the most expensive model should own every stage.",
-      "attention": "Very high — open-model agent competition",
+      "title": "Z.ai says GLM-5.3 is nearing frontier cyber-defence performance",
+      "summary": "Z.ai says its upcoming GLM-5.3 scored 84.5% on CyberGym for vulnerability discovery, slightly above Anthropic Mythos 5 on that benchmark, while remaining well behind Mythos on exploit development. The company plans to delay public weight release for two weeks while completing security reviews and to gate advanced capabilities through trusted access.",
+      "whyItMatters": "Cyber capability is diffusing beyond closed U.S. frontier models. Security teams cannot assume powerful offensive or defensive capability will stay behind one vendor's access controls; evaluation, sandboxing and monitoring need to work across a heterogeneous model ecosystem.",
+      "attention": "Very high — planned open-weight models are closing the cyber capability gap",
       "attentionLevel": "red",
       "sourceName": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/deepseek-releases-official-v4-pro-model-it-steps-up-expansion-2026-08-13/",
+      "sourceUrl": "https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/",
       "tags": [
-        "DeepSeek",
+        "GLM",
         "Open models",
-        "Agents",
-        "Inference"
+        "Cybersecurity",
+        "Model evaluation"
       ]
     },
     {
       "rank": 3,
-      "title": "Taiwan reports an AI-assisted cyberattack on government systems",
-      "summary": "Taiwan said attackers used a hybrid of manual operations and AI-agent assistance in a July campaign against government agencies; investigators said the incident came from overseas and affected units successfully contained it.",
-      "whyItMatters": "This is the shift security teams have been preparing for: AI agents can compress reconnaissance, credential discovery and exploitation into faster operational loops. Defensive systems need machine-speed detection, strong identity boundaries, detailed tool telemetry and rapid containment.",
-      "attention": "Very high — AI-assisted attacks move into real operations",
-      "attentionLevel": "red",
-      "sourceName": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/taiwan-says-it-was-targeted-last-month-ai-driven-hacking-campaign-2026-08-13/",
+      "title": "SRE-Bench shows frontier agents still struggle with real binary reverse engineering",
+      "summary": "SRE-Bench introduces 262 contamination-controlled binary instances and 1,572 deterministically graded reverse-engineering tasks built from 19 private programs plus 44 anti-analysis techniques. Across five frontier models, GPT-5.6 Sol led with 61.4% per-instance performance but fully solved only 31.5% of instances.",
+      "whyItMatters": "Strong source-code reasoning does not automatically transfer to binaries, firmware or malware. The result is a useful warning against overgeneralizing coding-agent benchmarks and a strong example of how realistic scale, private test artifacts and deterministic grading can produce more trustworthy security evaluations.",
+      "attention": "High — a harder and cleaner benchmark for agentic cyber capability",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.11469",
       "tags": [
-        "AI security",
         "Agents",
+        "Reverse engineering",
+        "Benchmarks",
         "Cybersecurity"
       ]
     },
     {
       "rank": 4,
-      "title": "Anthropic explores buying Decart to deepen inference and performance engineering",
-      "summary": "Anthropic is in early talks to acquire Nvidia-backed Decart AI, whose work spans AI infrastructure, optimization and world models; Reuters reports Decart's team would join Anthropic's inference and performance organization if a deal closes.",
-      "whyItMatters": "Frontier labs are increasingly pulling optimization, hardware-software co-design and model serving closer to the core model team. At scale, inference performance is becoming a strategic product capability rather than an interchangeable infrastructure layer.",
-      "attention": "High — vertical integration around inference",
+      "title": "LibraSpec dynamically chooses how much speculative decoding is actually worth verifying",
+      "summary": "LibraSpec reframes dynamic speculative decoding for diffusion-based drafters around expected speedup rather than predicted acceptance length. The training-free method uses drafter confidence to extend speculation only while marginal acceptance gain outweighs verification cost, reporting consistent gains and up to 8.49× speedup over autoregressive decoding in tested settings.",
+      "whyItMatters": "Inference optimization is moving from static model tricks toward workload-aware control decisions. For serving platforms, the useful objective is end-to-end latency and throughput after verification overhead—not a proxy metric such as draft acceptance rate.",
+      "attention": "High — inference policy becomes adaptive and cost-aware",
       "attentionLevel": "amber",
-      "sourceName": "Reuters",
-      "sourceUrl": "https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.08721",
       "tags": [
-        "Anthropic",
         "Inference",
-        "Performance",
-        "Infrastructure"
+        "Speculative decoding",
+        "Performance"
       ]
     },
     {
       "rank": 5,
-      "title": "KVGov isolates tenants without giving up most prefix-cache efficiency",
-      "summary": "A new arXiv paper demonstrates production-scale timing leakage from shared KV-prefix caches and proposes per-principal salted cache keys; the authors estimate a boundary-salting design can retain about 93% of prefix-cache benefit while removing cross-principal signals.",
-      "whyItMatters": "Prefix caching is an optimization with a tenant-isolation boundary hidden inside it. Multi-tenant inference platforms should treat cache identity and reuse policy as security architecture, not only performance tuning.",
-      "attention": "High — multi-tenant inference side channels",
+      "title": "Ark turns the architecture of coding agents into a small researchable system",
+      "summary": "A new study presents Ark, a deliberately minimal open-source coding agent that preserves core mechanisms used by modern agents, plus ArkBench with ten software-maintenance tasks. Using GPT-5.4-mini, Ark solved eight of ten tasks while the paper maps its components and execution flow to a broader coding-agent architecture taxonomy.",
+      "whyItMatters": "Coding agents are becoming infrastructure, yet many production systems are difficult to inspect. A small reference implementation makes it easier to reason about the harness separately from the model—tool execution, context construction, iteration, state and stopping behavior can be studied and tested as software components.",
+      "attention": "High — coding-agent harnesses become an explicit architecture",
       "attentionLevel": "amber",
       "sourceName": "arXiv",
-      "sourceUrl": "https://arxiv.org/abs/2608.09225",
+      "sourceUrl": "https://arxiv.org/abs/2608.10934",
       "tags": [
-        "KV cache",
-        "Inference",
-        "Security",
-        "Multi-tenancy"
+        "Coding agents",
+        "Architecture",
+        "Developer tools",
+        "Research"
       ]
     }
   ],
-  "takeaway": "Design AI platforms for rapid model substitution and increasingly autonomous execution. Put routing and cost telemetry above the model layer, and put isolation, cache governance, observability and containment below it."
+  "takeaway": "Build AI systems so model capability and agent authority are separable. Gate powerful actions independently of the model, evaluate on private and realistic tasks rather than headline benchmarks, and optimize the serving loop against end-to-end system cost. The durable advantage is increasingly the control plane, evaluation harness and inference runtime around rapidly changing models."
 }
