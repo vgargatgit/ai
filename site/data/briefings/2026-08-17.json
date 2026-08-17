@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-17",
+  "displayDate": "Monday, August 17, 2026",
+  "edition": "8:00 AM IST edition",
+  "generatedAt": "2026-08-17T08:59:50+05:30",
+  "signal": "Today’s strongest signal is that frontier AI progress is increasingly coming from architecture around the model: separating knowledge from reasoning, preserving recoverable execution state, managing long-horizon research as a stateful process, treating skills as procedural control rather than static knowledge, and hiding distributed inference imbalance before it reaches the critical path.",
+  "stories": [
+    {
+      "rank": 1,
+      "title": "Intern-S2-Mobius separates knowledge storage from reasoning — and reports nearly 4× faster inference",
+      "summary": "A new foundation-model architecture, Mobius-v0, separates a globally shared FFN-based memory from multiple self-attention reasoners that repeatedly query that memory during compositional reasoning. The authors report that a 7B model trained from scratch matches a 7B Transformer baseline using 62.6% of its training data, while Intern-S2-Mobius, continually pretrained from Qwen3.5-35B, reaches similar downstream scores with nearly 4× end-to-end inference speedup.",
+      "whyItMatters": "If these results hold across broader workloads, the work challenges the assumption that knowledge storage and reasoning should remain fused inside every Transformer block. For system designers, it points toward architectures where memory capacity, reasoning depth, training efficiency and inference cost can be tuned more independently.",
+      "attention": "Very high — model architecture is attacking both training and inference efficiency",
+      "attentionLevel": "red",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.14290",
+      "tags": [
+        "Model architecture",
+        "Reasoning",
+        "Inference",
+        "Training efficiency"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "ScienceFlow treats autonomous ML research as a recoverable, budget-aware execution system",
+      "summary": "ScienceFlow organizes long-horizon ML research into executable research segments with recoverable states. Its ESTRA controller can continue from the live state or re-anchor to an archived state, while an evidence-aware execution controller allocates compute based on remaining budget, resource availability and validated progress. The paper reports a 70.22% Any-Medal score on the full MLE-bench within a 24-hour budget, 4.92 points above prior reported results.",
+      "whyItMatters": "The interesting part is not just a stronger research agent; it is the runtime design. Long-running agents need explicit state, rollback, branching, budget allocation and evidence-based progress checks. Those are the same primitives needed for reliable autonomous software engineering and operations agents.",
+      "attention": "Very high — long-horizon agents are becoming stateful execution engines",
+      "attentionLevel": "red",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.14354",
+      "tags": [
+        "Research agents",
+        "Long-horizon agents",
+        "State management",
+        "ML automation"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "AgentRewind adds checkpoint-and-resume recovery to long-horizon LLM agents",
+      "summary": "AgentRewind records aligned checkpoints of both agent context and controlled environment state, allowing an agent to roll back after an early mistake and resume execution while retaining information learned from the failed attempt. The authors also introduce MettleBench for long-horizon engineering tasks and report higher task success and checklist progress across multiple models, harnesses and execution strategies.",
+      "whyItMatters": "Most agent stacks focus on preventing errors; production systems also need recovery after prevention fails. Coordinated checkpoints across model context and external state are a natural analogue of database recovery and workflow-engine compensation, and they make long-running agent work much less brittle.",
+      "attention": "High — rollback is becoming a first-class agent runtime primitive",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.14380",
+      "tags": [
+        "Agents",
+        "Recovery",
+        "Checkpointing",
+        "Reliability"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Agent skills appear to work mainly as procedural anchors — but retrieval collapses as skill libraries grow",
+      "summary": "A controlled study of agent skills across models, benchmarks and harnesses finds that skills improve matched performance over workflow memory by 6.06 points, but primarily by stabilizing execution rather than injecting missing knowledge. Procedural anchoring explains 65.7% of observed skill cases, while retrieval becomes a major bottleneck: as skill pools grow from 5 to 100, actual-use precision falls from 29.6% to 3.3%.",
+      "whyItMatters": "This reframes skills from documentation snippets into executable operating procedures. It also exposes a scaling problem: a large skill catalog is not automatically useful if the runtime cannot retrieve and adapt the right procedure. Teams should evaluate skill selection, compatibility and trajectory impact separately from skill authoring.",
+      "attention": "High — skill quality and skill retrieval are separate engineering problems",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.14036",
+      "tags": [
+        "Agent skills",
+        "Retrieval",
+        "Agent architecture",
+        "Evaluation"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "FreeBalance predicts MoE routing early enough to hide expert migration behind useful compute",
+      "summary": "FreeBalance targets load imbalance in expert-parallel Mixture-of-Experts inference. Instead of waiting for each router’s decisions before moving experts, it predicts upcoming routing demand from residual-network hidden states and begins expert migration during preceding computation. The paper reports a 32.8% reduction in max-to-mean rank load ratio and a 13.1% reduction in end-to-end prefill latency.",
+      "whyItMatters": "MoE serving performance is often limited by the most overloaded rank rather than average GPU utilization. Predicting routing early enough to overlap migration with attention turns load balancing from a reactive synchronization cost into a pipelined scheduling problem — a useful pattern for distributed inference systems generally.",
+      "attention": "High — MoE inference scheduling is moving ahead of the router",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.14205",
+      "tags": [
+        "MoE",
+        "Inference",
+        "Load balancing",
+        "Distributed systems"
+      ]
+    }
+  ],
+  "takeaway": "Design the AI runtime assuming long tasks, model changes and execution mistakes are normal. Separate durable knowledge from reasoning where architecture allows it, externalize agent state, checkpoint both context and environment, measure whether reusable skills actually stabilize execution, and treat inference scheduling as a predictive systems problem rather than a post-hoc optimization."
+}
