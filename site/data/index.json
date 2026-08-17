@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-17",
+      "displayDate": "Monday, August 17, 2026",
+      "signal": "Today’s strongest signal is that frontier AI progress is increasingly coming from architecture around the model: separating knowledge from reasoning, preserving recoverable execution state, managing long-horizon research as a stateful process, treating skills as procedural control rather than static knowledge, and hiding distributed inference imbalance before it reaches the critical path."
+    },
+    {
       "date": "2026-08-16",
       "displayDate": "Sunday, August 16, 2026",
       "signal": "The strongest signal is that agent engineering is shifting from raw model capability to control of the surrounding system: infrastructure financing is tightening the link between models and compute, multi-agent coding needs explicit coordination, transferable world models can be separated from task control, governance is moving into machine-speed policy enforcement, and secure generation requires more than passing functional tests."
