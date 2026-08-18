@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-18",
+      "displayDate": "Tuesday, August 18, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is moving from monolithic model improvement toward composable systems: interoperable agent protocols, transactional execution guarantees, adaptive RL environment generation, tokenizer-agnostic distillation, and attention-aware KV compression all make capability easier to scale, control and deploy."
+    },
+    {
       "date": "2026-08-17",
       "displayDate": "Monday, August 17, 2026",
       "signal": "Today’s strongest signal is that frontier AI progress is increasingly coming from architecture around the model: separating knowledge from reasoning, preserving recoverable execution state, managing long-horizon research as a stateful process, treating skills as procedural control rather than static knowledge, and hiding distributed inference imbalance before it reaches the critical path."
