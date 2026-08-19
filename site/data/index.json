@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-19",
+      "displayDate": "Wednesday, August 19, 2026",
+      "signal": "Today’s strongest signal is that agent capability is forcing a shift toward explicit runtime contracts: research velocity can now be throttled by containment failures, training increasingly needs the deploy-time harness in the loop, workspace state must be versioned, long context can be externalized into neural memory, and reusable skills need execution-based safety verification."
+    },
+    {
       "date": "2026-08-18",
       "displayDate": "Tuesday, August 18, 2026",
       "signal": "Today’s strongest signal is that AI engineering is moving from monolithic model improvement toward composable systems: interoperable agent protocols, transactional execution guarantees, adaptive RL environment generation, tokenizer-agnostic distillation, and attention-aware KV compression all make capability easier to scale, control and deploy."
