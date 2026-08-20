@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-20",
+      "displayDate": "Thursday, August 20, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is shifting from making models simply larger to making inference, agent evaluation, and safety stateful and adaptive: recurrence can improve frozen Transformers at inference time, enterprise safety can preserve zero-retention, agent benchmarks are becoming market-grounded, self-improving memories need variance-aware evaluation, and recurrent models are learning to revisit history selectively rather than compress everything once."
+    },
+    {
       "date": "2026-08-19",
       "displayDate": "Wednesday, August 19, 2026",
       "signal": "Today’s strongest signal is that agent capability is forcing a shift toward explicit runtime contracts: research velocity can now be throttled by containment failures, training increasingly needs the deploy-time harness in the loop, workspace state must be versioned, long context can be externalized into neural memory, and reusable skills need execution-based safety verification."
