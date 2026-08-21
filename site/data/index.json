@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-21",
+      "displayDate": "Friday, August 21, 2026",
+      "signal": "Today’s strongest signal is that production AI is shifting from model-centric design toward explicit agent infrastructure: browser and computer-use tools are becoming first-class platform primitives, containment remains an industry-wide weakness, AI-for-AI systems still struggle to change strategy mid-run, long-horizon benchmarks are exposing behavioral rather than scale-driven differences, and lightweight structured models can outperform LLMs for agent observability."
+    },
+    {
       "date": "2026-08-20",
       "displayDate": "Thursday, August 20, 2026",
       "signal": "Today’s strongest signal is that AI engineering is shifting from making models simply larger to making inference, agent evaluation, and safety stateful and adaptive: recurrence can improve frozen Transformers at inference time, enterprise safety can preserve zero-retention, agent benchmarks are becoming market-grounded, self-improving memories need variance-aware evaluation, and recurrent models are learning to revisit history selectively rather than compress everything once."
