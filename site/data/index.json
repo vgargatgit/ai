@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-23",
+      "displayDate": "Sunday, August 23, 2026",
+      "signal": "Today’s strongest signal is that frontier AI is becoming an engineered runtime rather than a single model: long-horizon capability is emerging from persistent memory and supervision, open-model development infrastructure is becoming strategic IP, reasoning compute can be allocated adaptively, MoE training can inherit hyperparameters from small proxies, and model definitions are starting to decouple from execution frameworks."
+    },
+    {
       "date": "2026-08-22",
       "displayDate": "Saturday, August 22, 2026",
       "signal": "Today’s strongest signal is that the AI stack is becoming a control-plane problem: frontier capability is being exposed through constrained interfaces, autonomous research needs harder measurements of real algorithmic improvement, model routing must account for the cost of deciding where work should go, tool use benefits from dedicated training, and inference placement is becoming an explicit capacity and data-residency policy."
