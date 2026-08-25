@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-25",
+  "displayDate": "Tuesday, August 25, 2026",
+  "edition": "8:00 AM IST edition",
+  "generatedAt": "2026-08-25T08:48:54+05:30",
+  "signal": "Today’s strongest signal is that production AI is moving toward explicit execution structure: voice agents are gaining CI-grade evaluation, natural-language procedures are being compiled into artifact contracts, long-horizon memory is becoming selective rather than additive, model upgrades are becoming measurable lifecycle decisions, and RL environments are beginning to adapt to an agent’s current weaknesses.",
+  "stories": [
+    {
+      "rank": 1,
+      "title": "Google ADK adds native live evaluation for voice agents with real audio turns",
+      "summary": "Google’s Agent Development Kit can now evaluate live voice agents using simulated users that generate multi-turn behavior, synthesize their turns into audio, and stream that audio into the agent under test. The same evaluation loop can score spoken responses and tool execution, cap conversation length, preserve transcripts and playable audio, and run from the CLI or programmatically in CI/CD.",
+      "whyItMatters": "Voice agents fail in ways text-only tests miss: turn timing, interruptions, state drift, tool sequencing, and spoken-response quality all interact. Bringing audio trajectories into repeatable regression tests is a meaningful step toward treating real-time agents like production software rather than demos. Teams can now make prompt, model, or workflow changes and detect behavioral regressions before deployment.",
+      "attention": "Very high — multimodal agent behavior is becoming testable inside ordinary engineering pipelines",
+      "attentionLevel": "red",
+      "sourceName": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/how-to-evaluate-live-voice-agents-in-adk/",
+      "tags": [
+        "Voice agents",
+        "Agent evaluation",
+        "Developer tools",
+        "CI/CD"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Artic compiles natural-language workflows into explicit agent execution contracts",
+      "summary": "Artic transforms reusable natural-language procedures into artifact-driven workflows where each step explicitly declares what it reads and writes, constraints gate outputs, and control transfers are represented directly rather than inferred from prose. The compiler also performs local faithfulness checks and scenario-based dry runs. Across 488 instances from 11 real-world workflows, the paper reports a 28-point improvement in task resolution, plus 32- and 56-point gains in cross-model and repeated-execution consistency.",
+      "whyItMatters": "This is essentially a compiler boundary for agents. Instead of asking a model to repeatedly reinterpret a long procedural prompt, the system turns prose into a reviewable intermediate representation with typed artifacts and explicit control flow. That is much closer to how reliable workflow engines, build systems, and data pipelines are engineered, and it creates places to enforce invariants independently of the model.",
+      "attention": "Very high — natural-language agent procedures are starting to acquire software-like intermediate representations",
+      "attentionLevel": "red",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.21341",
+      "tags": [
+        "Agent architecture",
+        "Workflow compilation",
+        "Reliability",
+        "Software engineering"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Weighted Memory Tree makes long-horizon agent memory selective instead of ever-growing",
+      "summary": "Weighted Memory Tree organizes agent history hierarchically across tasks, subtasks, and actions, then assigns each memory a dynamic retention score that changes with events and selection frequency. Useful information remains active, completed trajectories can be folded, low-utility content decays, and folded context stays recoverable. On GAIA-Text with Qwen3-8B, Gemma 4 E4B, and Llama-3.1-8B, the authors report an average 9.97-point accuracy gain over linear memory while reducing prompt-token use by 32.8%.",
+      "whyItMatters": "Persistent agents cannot keep solving context growth by appending everything forever. Memory needs lifecycle policy: promotion, decay, folding, retrieval, and resistance to poisoned or stale information. WMT’s results support a practical design principle for coding and operations agents: deciding what remains active can matter more than maximizing what gets stored.",
+      "attention": "High — memory management is becoming an active control policy for long-running agents",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.20631",
+      "tags": [
+        "Agent memory",
+        "Long-horizon agents",
+        "Context efficiency",
+        "Reliability"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "UpgradeBench turns open-model upgrades into an explicit quality-cost decision",
+      "summary": "UpgradeBench studies what happens to fine-tuned specialists as their open-weight base models move through real release sequences. Across consecutive Qwen releases, OLMo checkpoints, six tasks, and two model sizes, it measures whether retraining helps, whether adapters remain portable, and which recovery strategies work. A simulated decision policy across 33 upgrade episodes achieved 0.37 percentage points of mean quality regret with no behavioral regressions while using roughly one-third the compute and label cost of always retraining.",
+      "whyItMatters": "Open-model teams increasingly face a recurring migration question rather than a one-time fine-tuning problem. New base checkpoints can improve some specialists, leave others unchanged, or invalidate adapters. Treating upgrades as a measured lifecycle policy—with compatibility probes, preserved behavior, cost accounting, and regression gates—is much safer than assuming every new checkpoint deserves an automatic rebuild.",
+      "attention": "High — model-version migration is becoming a first-class MLOps decision rather than a manual retraining habit",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.20918",
+      "tags": [
+        "Open models",
+        "Fine-tuning",
+        "MLOps",
+        "Model lifecycle"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "EnvHarness lets RL environments evolve around an agent without rebuilding the world",
+      "summary": "EnvHarness wraps an existing verified environment with programmable components that reshape its behavior without modifying the underlying task logic. Its EnvRigger system observes a target agent as a black box, diagnoses weaknesses from execution trajectories, synthesizes harness components aimed at those weaknesses, and validates them through fresh rollouts. Across five benchmarks in four domains, the authors report up to a 9.0-point improvement on held-out instances with 9.8% fewer execution steps.",
+      "whyItMatters": "Agent RL usually suffers from static environments that stop being informative as the policy improves, while generating entirely new verified worlds is expensive. A harness layer that preserves the original verifier but changes the challenge distribution creates a cleaner feedback loop: observe failure modes, reshape the environment, retrain, and repeat. That is a promising pattern for continual agent post-training.",
+      "attention": "High — agent training environments are becoming adaptive infrastructure instead of fixed benchmarks",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.19880",
+      "tags": [
+        "Agent RL",
+        "Training environments",
+        "Post-training",
+        "Evaluation"
+      ]
+    }
+  ],
+  "takeaway": "Engineer agents around explicit contracts and lifecycle policies rather than ever-larger prompts. Put multimodal behavior under repeatable evaluation, compile important procedures into structured execution plans, actively manage what long-running systems remember, gate model upgrades with measured compatibility and cost, and let training environments evolve with the policy. The common theme is that reliability increasingly comes from the machinery surrounding the model."
+}
