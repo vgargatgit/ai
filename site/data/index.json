@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-25",
+      "displayDate": "Tuesday, August 25, 2026",
+      "signal": "Today’s strongest signal is that production AI is moving toward explicit execution structure: voice agents are gaining CI-grade evaluation, natural-language procedures are being compiled into artifact contracts, long-horizon memory is becoming selective rather than additive, model upgrades are becoming measurable lifecycle decisions, and RL environments are beginning to adapt to an agent’s current weaknesses."
+    },
+    {
       "date": "2026-08-24",
       "displayDate": "Monday, August 24, 2026",
       "signal": "Today’s strongest signal is that AI systems are getting more economical by assigning different jobs to different components: model routers choose providers and tiers dynamically, tiny advisors can steer much larger agents, critique and revision stages need different amounts of model capacity, hybrid-model speculative decoding is becoming state-aware, and reusable reasoning memories can move work from expensive decoding into cheaper prefill."
