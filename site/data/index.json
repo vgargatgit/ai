@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-26",
+      "displayDate": "Wednesday, August 26, 2026",
+      "signal": "Today’s strongest signal is that production AI is becoming a co-designed runtime: inference hardware is specializing for agent loops, security is shifting from prompt-level rules to explicit information-flow and attestation controls, and long-running memory needs type-aware retention rather than uniform summarization."
+    },
+    {
       "date": "2026-08-25",
       "displayDate": "Tuesday, August 25, 2026",
       "signal": "Today’s strongest signal is that production AI is moving toward explicit execution structure: voice agents are gaining CI-grade evaluation, natural-language procedures are being compiled into artifact contracts, long-horizon memory is becoming selective rather than additive, model upgrades are becoming measurable lifecycle decisions, and RL environments are beginning to adapt to an agent’s current weaknesses."
