@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-28",
+      "displayDate": "Friday, August 28, 2026",
+      "signal": "Today’s strongest signal is that AI progress is shifting toward deliberately engineered systems around the model: open architectures are trading dense compute for smarter memory and attention, GPU stacks are using agents to optimize themselves, physical-world agents are gaining device-level contracts, autonomous ML systems are being decomposed into typed stages, and frontier models are beginning to design reusable algorithms rather than only solve individual instances."
+    },
+    {
       "date": "2026-08-27",
       "displayDate": "Thursday, August 27, 2026",
       "signal": "Today’s strongest signal is that AI engineering is converging on explicit boundaries around autonomy: browser agents are crossing from assisted to autonomous action, frontier-agent postmortems show that stop conditions and harness design are security controls, inference runtimes are becoming hardware- and workflow-aware, and self-improvement is being made reviewable through versioned skills."
