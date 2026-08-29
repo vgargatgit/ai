@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-29",
+      "displayDate": "Saturday, August 29, 2026",
+      "signal": "Today’s strongest signal is that the AI stack is becoming both more vertically integrated and more explicitly controlled: open models are helping optimize their own training and inference, NVIDIA is moving deeper into the open-model distribution layer, automated researchers are beginning to post-train alignment at frontier scale, coding agents are gaining least-privilege execution modes, and some multi-agent diversity may be compressed into a single routed model."
+    },
+    {
       "date": "2026-08-28",
       "displayDate": "Friday, August 28, 2026",
       "signal": "Today’s strongest signal is that AI progress is shifting toward deliberately engineered systems around the model: open architectures are trading dense compute for smarter memory and attention, GPU stacks are using agents to optimize themselves, physical-world agents are gaining device-level contracts, autonomous ML systems are being decomposed into typed stages, and frontier models are beginning to design reusable algorithms rather than only solve individual instances."
