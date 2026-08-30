@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-30",
+      "displayDate": "Sunday, August 30, 2026",
+      "signal": "Today’s strongest signal is that long-running agents are forcing the stack to become more explicit: persistence needs bounded authority, serving engines are specializing for modern model state and memory, live supervisors can redirect active runs, software interfaces are moving from pixels to semantic actions, and AI-research systems need auditors that verify experimental fidelity rather than merely successful execution."
+    },
+    {
       "date": "2026-08-29",
       "displayDate": "Saturday, August 29, 2026",
       "signal": "Today’s strongest signal is that the AI stack is becoming both more vertically integrated and more explicitly controlled: open models are helping optimize their own training and inference, NVIDIA is moving deeper into the open-model distribution layer, automated researchers are beginning to post-train alignment at frontier scale, coding agents are gaining least-privilege execution modes, and some multi-agent diversity may be compressed into a single routed model."
