@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-08-31",
+      "displayDate": "Monday, August 31, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is becoming adaptive at every layer: provider access can change underneath developer tools, speech is moving into specialized real-time model endpoints, RL post-training can use weaker models to preserve exploration, MoE inference can allocate experts by task and layer, and agent security testing is evolving from static jailbreak sets into reusable self-improving attack skills."
+    },
+    {
       "date": "2026-08-30",
       "displayDate": "Sunday, August 30, 2026",
       "signal": "Today’s strongest signal is that long-running agents are forcing the stack to become more explicit: persistence needs bounded authority, serving engines are specializing for modern model state and memory, live supervisors can redirect active runs, software interfaces are moving from pixels to semantic actions, and AI-research systems need auditors that verify experimental fidelity rather than merely successful execution."
