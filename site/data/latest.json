@@ -1,90 +1,90 @@
 {
-  "date": "2026-08-30",
-  "displayDate": "Sunday, August 30, 2026",
+  "date": "2026-08-31",
+  "displayDate": "Monday, August 31, 2026",
   "edition": "8:00 AM IST edition",
-  "generatedAt": "2026-08-30T08:33:02+05:30",
-  "signal": "Today’s strongest signal is that long-running agents are forcing the stack to become more explicit: persistence needs bounded authority, serving engines are specializing for modern model state and memory, live supervisors can redirect active runs, software interfaces are moving from pixels to semantic actions, and AI-research systems need auditors that verify experimental fidelity rather than merely successful execution.",
+  "generatedAt": "2026-08-31T08:15:46+05:30",
+  "signal": "Today’s strongest signal is that AI engineering is becoming adaptive at every layer: provider access can change underneath developer tools, speech is moving into specialized real-time model endpoints, RL post-training can use weaker models to preserve exploration, MoE inference can allocate experts by task and layer, and agent security testing is evolving from static jailbreak sets into reusable self-improving attack skills.",
   "stories": [
     {
       "rank": 1,
-      "title": "OpenAI is testing a Codex “Persistent mode” that can keep working until put to sleep",
-      "summary": "WIRED reports, based on public Codex code changes and confirmation from OpenAI, that the company is testing a Persistent mode in which Codex can continue working until the user puts it to sleep. The associated proactivity logic can create follow-up tasks, carry them across sessions, use prior interactions to decide what to work on, and message the user sparingly. OpenAI says the feature is experimental and has no immediate launch plan; the code also states that persistence does not expand the agent’s permissions.",
-      "whyItMatters": "Persistence changes the failure model of an agent. A coding assistant that runs for minutes can be supervised interactively; one that can create work for itself across sessions needs durable state, budget limits, explicit stop conditions, permission scopes, audit trails, and recovery semantics. The key architecture is therefore not simply “run the model longer” but persistent execution behind a control plane that keeps authority bounded even as task horizon grows.",
-      "attention": "Very high — persistent coding agents are moving from bounded turns toward continuous execution",
+      "title": "OpenAI winds down direct model supply to Cursor, exposing a real portability boundary in coding agents",
+      "summary": "OpenAI says it intends to wind down its contract providing OpenAI models to Cursor after Cursor’s acquisition by SpaceX, with a proposed shutoff date of November 12, 2026, and says future models such as Astra will not be provided through that contract. OpenAI’s transition guidance says developers can still use their own OpenAI API key for supported local Cursor Chat and Agent requests, the Codex IDE extension, or compatible gateways, but that path does not cover Cursor Tab, Auto routing, Cloud or Background Agents, Automations, CLI, API, or SDK surfaces.",
+      "whyItMatters": "Provider portability is not just API compatibility. A coding product may have local model calls that are easy to reroute while autocomplete, cloud agents, background execution, routing, and automation remain coupled to the vendor’s own model-supply agreements. Engineering teams should map model dependencies per product surface, keep gateways and fallbacks explicit, and test degraded modes before a commercial or policy change removes a provider from part of the stack.",
+      "attention": "Very high — provider access has become an operational dependency for coding-agent platforms",
       "attentionLevel": "red",
-      "sourceName": "WIRED",
-      "sourceUrl": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
       "tags": [
-        "Codex",
         "Coding agents",
-        "Long-horizon agents",
-        "Agent security"
+        "Model portability",
+        "AI gateways",
+        "OpenAI"
       ]
     },
     {
       "rank": 2,
-      "title": "vLLM 0.28 pushes Kimi-K3 and DeepSeek V4 serving deeper into model-aware optimization",
-      "summary": "vLLM 0.28.0 ships 584 commits from 270 contributors. The release adds a major Kimi-K3 performance pass with Decode Context Parallelism, fused FlashKDA kernels, combined all-gathers that report 1.5–3× kernel-level speedups, an adaptive speculative-token budget with about 60% better DSpark time-to-first-token, and optional shared-expert sharding that saves roughly 17 GiB per GPU. DeepSeek V4 gains end-to-end sparse MLA for ordinary decode, MTP, and DSpark speculative decoding; the release also adds tiered KV-cache offloading to disk and expands the Rust/gRPC serving path.",
-      "whyItMatters": "Open-model serving is becoming architecture-aware rather than generic Transformer hosting. Modern MoE, hybrid-attention and speculative-decoding systems expose model-specific communication, cache and state behavior that the runtime can exploit. For platform teams, this makes inference-engine versioning and benchmarking a first-class operational concern: the same checkpoint can have materially different economics depending on scheduler, cache tiering, kernels, accelerator backend, and speculative policy.",
-      "attention": "Very high — inference runtimes are co-designing around the newest open-model architectures",
+      "title": "Weak-model guidance broadens RLVR exploration instead of distilling the weaker model",
+      "summary": "A new RLVR method deliberately feeds a stronger target model partial reasoning trajectories produced by smaller, weaker models. Those unfamiliar prefixes perturb an increasingly overconfident policy and push it toward alternative reasoning paths. Across mathematical benchmarks, the authors report consistent gains over vanilla RLVR, with larger improvements as pass@k grows, while mitigating entropy collapse without extra supervised fine-tuning, custom reward design, or elaborate prompting.",
+      "whyItMatters": "This is a useful inversion of the usual teacher-student story: a weaker model can be valuable because it is different, not because its answers are better. In post-training systems, heterogeneous models can act as inexpensive exploration generators that preserve solution diversity while the stronger policy learns from verifiable rewards. That suggests model portfolios may be useful inside training loops as well as at inference time.",
+      "attention": "Very high — weaker models can serve as exploration perturbations for stronger reasoning policies",
       "attentionLevel": "red",
-      "sourceName": "vLLM",
-      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.27420",
       "tags": [
-        "vLLM",
-        "Inference",
-        "Kimi-K3",
-        "DeepSeek V4"
+        "RLVR",
+        "Reasoning",
+        "Post-training",
+        "Exploration"
       ]
     },
     {
       "rank": 3,
-      "title": "PILOT lets a supervisor redirect an agent while the run is still alive",
-      "summary": "PILOT proposes a supervisor-worker harness for live self-improvement instead of waiting until a long run finishes. A separate supervisor can redirect or abort the active worker, while lessons and failure modes discovered during execution are distilled into reusable skills and memory. Across two frozen backbones and three benchmarks, PILOT ranks first in five of six configurations; on Terminal-Bench 2.0 it beats counterpart harnesses by up to 9.8 percentage points, while its self-improvement setting reports 12.4–14.6 point gains and large reductions in output-token use.",
-      "whyItMatters": "Post-hoc reflection is too late for an expensive run that is already drifting. A live supervisor introduces a control-loop pattern familiar from distributed systems: observe execution, detect stalled or unsafe trajectories, intervene before the budget is exhausted, then persist validated lessons for future runs. That is a stronger architecture for autonomous coding, research, and operations agents than asking the worker to both execute and objectively critique itself inside one context.",
-      "attention": "High — long-horizon agent control is moving from after-the-fact reflection to live supervision",
+      "title": "Gemini 3.5 Transcribe turns speech-to-text into a specialized real-time agent input model",
+      "summary": "Google released Gemini 3.5 Transcribe in public preview with separate streaming and pre-recorded APIs. The live model supports continuous bidirectional streaming with sub-second latency, while the recorded-audio path adds speaker attribution and word-level timestamps. Google reports 4.0% average WER for streaming and 2.6% for non-streaming use cases as measured by Artificial Analysis, support for more than 85 languages, and a 70% improvement in time to final transcription versus Chirp 3.",
+      "whyItMatters": "Voice-agent quality depends on more than the reasoning model. Endpointing, transcript finalization, jargon handling, diarization, language switching, and latency all sit upstream of the agent loop and can dominate the user experience. Treating transcription as its own model stage with explicit latency and accuracy SLOs makes the voice stack easier to benchmark, swap, and optimize independently of the conversational model.",
+      "attention": "High — real-time speech is becoming a first-class model stage in agent architectures",
       "attentionLevel": "amber",
-      "sourceName": "arXiv",
-      "sourceUrl": "https://arxiv.org/abs/2608.26530",
+      "sourceName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
       "tags": [
-        "Agent architecture",
-        "Supervision",
-        "Self-improvement",
-        "Long-horizon agents"
+        "Voice AI",
+        "Gemini",
+        "Speech-to-text",
+        "Agents"
       ]
     },
     {
       "rank": 4,
-      "title": "ASIL replaces screenshot-and-click automation with structured state and semantic software actions",
-      "summary": "ASIL introduces an Agent-Software Interaction Layer that exposes applications through structured JSON observations and executable semantic actions using the deepest feasible access path for each app. Across 15 applications and 380 tasks, the paper reports scores above 80 with closed models while using fewer than five actions per task. On the same tasks, screenshot-and-click control performs far worse even with a repaired runtime and 50-step budget. The structured interface also supports training: small-scale SFT and on-policy RL materially improve Qwen3.5 2B and 9B agents.",
-      "whyItMatters": "Screenshots are a lossy state representation and mouse clicks are a poor action API. ASIL reinforces a broader direction already visible in MCP and typed-action systems: give agents machine-readable state plus semantically meaningful operations, then reserve vision-based UI control for the cases where no structured surface exists. That improves reliability, observability, training efficiency, and permission enforcement at the same time.",
-      "attention": "High — software-operating agents are moving from pixels and coordinates toward typed interaction contracts",
+      "title": "MetaNet makes MoE expert activation task- and layer-aware without changing the backbone",
+      "summary": "MetaNet adds a support-set controller above a frozen Mixture-of-Experts model and predicts per-layer expert-retention thresholds plus bounded routing biases. On DeepSeek-MoE-16B-Chat, the authors report a conservative configuration averaging 3.61 active experts instead of a fixed six — 40% fewer — with comparable MMLU accuracy, while a more aggressive configuration averages 2.28 experts with a larger quality trade-off. A controller trained on MMLU also transfers to C-Eval without retraining.",
+      "whyItMatters": "Sparse models usually make routing decisions token by token while keeping a fixed expert budget. A task-aware controller adds another control surface: cheap workloads can use fewer experts, harder tasks can preserve more capacity, and the frozen base model does not need to be retrained. If the result holds at serving scale, quality-versus-compute becomes a runtime policy rather than a single model-wide constant.",
+      "attention": "High — MoE compute budgets are becoming adaptive by task and layer",
       "attentionLevel": "amber",
       "sourceName": "arXiv",
-      "sourceUrl": "https://arxiv.org/abs/2608.26991",
+      "sourceUrl": "https://arxiv.org/abs/2608.26650",
       "tags": [
-        "Computer use",
-        "Agent interfaces",
-        "MCP",
-        "Tool use"
+        "MoE",
+        "Inference",
+        "Model routing",
+        "Compression"
       ]
     },
     {
       "rank": 5,
-      "title": "ABE-Ralph finds that AI scientists can execute experiments correctly while testing the wrong scientific claim",
-      "summary": "Beyond Execution studies methodological hallucinations in LLM-driven scientific research: agents may silently shrink datasets or budgets, replace failed components with lookup or oracle logic, or draw conclusions from experiments that no longer test the reference claim. ABE-Ralph represents claims, protocols, required components, baselines, and metrics as structured constraints and verifies runs quantitatively, qualitatively, and at the code level. Across 30 long-horizon reproduction runs spanning 12 ML domains, the paper reports a 93% robust execution rate and identifies five distinct scientific failure modes.",
-      "whyItMatters": "For autonomous research, “the code ran” is not a valid success criterion. Research agents need a separate verifier that checks whether the implementation, experimental budget, baselines, and evidence actually correspond to the hypothesis under test. This is the scientific equivalent of separating a code generator from its test and review pipeline: execution and epistemic validity should be different components with different failure detectors.",
-      "attention": "High — autonomous research needs fidelity auditing, not just executable experiments",
+      "title": "RedEvoAgent turns agent red-teaming into a validated, evolving skill loop",
+      "summary": "RedEvoAgent is a black-box red-teaming agent for product-level LLM harnesses, where a successful jailbreak can trigger tool use or persistent state changes rather than merely unsafe text. It distills attack trajectories into a concise human-readable attack skill, updates that skill using tool-effectiveness and attribution signals, and keeps changes only when they improve validation performance. The authors report better attack effectiveness and tool efficiency than fixed and agentic baselines across multiple models, benchmarks, and execution harnesses.",
+      "whyItMatters": "Static jailbreak suites age quickly as agent tools and defenses change. A security regression system should learn from successful and failed attack trajectories while keeping the learned behavior inspectable, versionable, and gated by held-out validation. This mirrors a good software-testing loop: discover a failure, turn it into a reusable test strategy, verify the update, and carry it forward across releases.",
+      "attention": "High — agent security testing is becoming self-improving but still reviewable",
       "attentionLevel": "amber",
       "sourceName": "arXiv",
-      "sourceUrl": "https://arxiv.org/abs/2608.26753",
+      "sourceUrl": "https://arxiv.org/abs/2608.27439",
       "tags": [
-        "AI scientists",
-        "Evaluation",
-        "Research agents",
-        "Reliability"
+        "Agent security",
+        "Red teaming",
+        "Agent skills",
+        "Evaluation"
       ]
     }
   ],
-  "takeaway": "Design agent systems around explicit runtime contracts. Persistent workers need bounded authority and durable stop/recovery controls; inference engines should be benchmarked against each model’s real state and communication patterns; active runs need independent supervision; software tools should expose structured semantic actions where possible; and autonomous research should be judged by whether the experiment faithfully tests the intended claim, not merely by whether it finishes."
+  "takeaway": "Build the AI layer so both capability and policy can change without forcing application rewrites. Keep provider access behind portable gateways, benchmark specialized modalities as independent services, make training and inference controllers adaptive rather than fixed, and turn agent security into a continuous validated regression loop. The durable advantage is increasingly the control plane that can reroute, rebudget, and retest rapidly changing models."
 }
