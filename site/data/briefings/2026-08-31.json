@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-31",
+  "displayDate": "Monday, August 31, 2026",
+  "edition": "8:00 AM IST edition",
+  "generatedAt": "2026-08-31T08:15:46+05:30",
+  "signal": "Today’s strongest signal is that AI engineering is becoming adaptive at every layer: provider access can change underneath developer tools, speech is moving into specialized real-time model endpoints, RL post-training can use weaker models to preserve exploration, MoE inference can allocate experts by task and layer, and agent security testing is evolving from static jailbreak sets into reusable self-improving attack skills.",
+  "stories": [
+    {
+      "rank": 1,
+      "title": "OpenAI winds down direct model supply to Cursor, exposing a real portability boundary in coding agents",
+      "summary": "OpenAI says it intends to wind down its contract providing OpenAI models to Cursor after Cursor’s acquisition by SpaceX, with a proposed shutoff date of November 12, 2026, and says future models such as Astra will not be provided through that contract. OpenAI’s transition guidance says developers can still use their own OpenAI API key for supported local Cursor Chat and Agent requests, the Codex IDE extension, or compatible gateways, but that path does not cover Cursor Tab, Auto routing, Cloud or Background Agents, Automations, CLI, API, or SDK surfaces.",
+      "whyItMatters": "Provider portability is not just API compatibility. A coding product may have local model calls that are easy to reroute while autocomplete, cloud agents, background execution, routing, and automation remain coupled to the vendor’s own model-supply agreements. Engineering teams should map model dependencies per product surface, keep gateways and fallbacks explicit, and test degraded modes before a commercial or policy change removes a provider from part of the stack.",
+      "attention": "Very high — provider access has become an operational dependency for coding-agent platforms",
+      "attentionLevel": "red",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "tags": [
+        "Coding agents",
+        "Model portability",
+        "AI gateways",
+        "OpenAI"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Weak-model guidance broadens RLVR exploration instead of distilling the weaker model",
+      "summary": "A new RLVR method deliberately feeds a stronger target model partial reasoning trajectories produced by smaller, weaker models. Those unfamiliar prefixes perturb an increasingly overconfident policy and push it toward alternative reasoning paths. Across mathematical benchmarks, the authors report consistent gains over vanilla RLVR, with larger improvements as pass@k grows, while mitigating entropy collapse without extra supervised fine-tuning, custom reward design, or elaborate prompting.",
+      "whyItMatters": "This is a useful inversion of the usual teacher-student story: a weaker model can be valuable because it is different, not because its answers are better. In post-training systems, heterogeneous models can act as inexpensive exploration generators that preserve solution diversity while the stronger policy learns from verifiable rewards. That suggests model portfolios may be useful inside training loops as well as at inference time.",
+      "attention": "Very high — weaker models can serve as exploration perturbations for stronger reasoning policies",
+      "attentionLevel": "red",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.27420",
+      "tags": [
+        "RLVR",
+        "Reasoning",
+        "Post-training",
+        "Exploration"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Gemini 3.5 Transcribe turns speech-to-text into a specialized real-time agent input model",
+      "summary": "Google released Gemini 3.5 Transcribe in public preview with separate streaming and pre-recorded APIs. The live model supports continuous bidirectional streaming with sub-second latency, while the recorded-audio path adds speaker attribution and word-level timestamps. Google reports 4.0% average WER for streaming and 2.6% for non-streaming use cases as measured by Artificial Analysis, support for more than 85 languages, and a 70% improvement in time to final transcription versus Chirp 3.",
+      "whyItMatters": "Voice-agent quality depends on more than the reasoning model. Endpointing, transcript finalization, jargon handling, diarization, language switching, and latency all sit upstream of the agent loop and can dominate the user experience. Treating transcription as its own model stage with explicit latency and accuracy SLOs makes the voice stack easier to benchmark, swap, and optimize independently of the conversational model.",
+      "attention": "High — real-time speech is becoming a first-class model stage in agent architectures",
+      "attentionLevel": "amber",
+      "sourceName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+      "tags": [
+        "Voice AI",
+        "Gemini",
+        "Speech-to-text",
+        "Agents"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "MetaNet makes MoE expert activation task- and layer-aware without changing the backbone",
+      "summary": "MetaNet adds a support-set controller above a frozen Mixture-of-Experts model and predicts per-layer expert-retention thresholds plus bounded routing biases. On DeepSeek-MoE-16B-Chat, the authors report a conservative configuration averaging 3.61 active experts instead of a fixed six — 40% fewer — with comparable MMLU accuracy, while a more aggressive configuration averages 2.28 experts with a larger quality trade-off. A controller trained on MMLU also transfers to C-Eval without retraining.",
+      "whyItMatters": "Sparse models usually make routing decisions token by token while keeping a fixed expert budget. A task-aware controller adds another control surface: cheap workloads can use fewer experts, harder tasks can preserve more capacity, and the frozen base model does not need to be retrained. If the result holds at serving scale, quality-versus-compute becomes a runtime policy rather than a single model-wide constant.",
+      "attention": "High — MoE compute budgets are becoming adaptive by task and layer",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.26650",
+      "tags": [
+        "MoE",
+        "Inference",
+        "Model routing",
+        "Compression"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "RedEvoAgent turns agent red-teaming into a validated, evolving skill loop",
+      "summary": "RedEvoAgent is a black-box red-teaming agent for product-level LLM harnesses, where a successful jailbreak can trigger tool use or persistent state changes rather than merely unsafe text. It distills attack trajectories into a concise human-readable attack skill, updates that skill using tool-effectiveness and attribution signals, and keeps changes only when they improve validation performance. The authors report better attack effectiveness and tool efficiency than fixed and agentic baselines across multiple models, benchmarks, and execution harnesses.",
+      "whyItMatters": "Static jailbreak suites age quickly as agent tools and defenses change. A security regression system should learn from successful and failed attack trajectories while keeping the learned behavior inspectable, versionable, and gated by held-out validation. This mirrors a good software-testing loop: discover a failure, turn it into a reusable test strategy, verify the update, and carry it forward across releases.",
+      "attention": "High — agent security testing is becoming self-improving but still reviewable",
+      "attentionLevel": "amber",
+      "sourceName": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.27439",
+      "tags": [
+        "Agent security",
+        "Red teaming",
+        "Agent skills",
+        "Evaluation"
+      ]
+    }
+  ],
+  "takeaway": "Build the AI layer so both capability and policy can change without forcing application rewrites. Keep provider access behind portable gateways, benchmark specialized modalities as independent services, make training and inference controllers adaptive rather than fixed, and turn agent security into a continuous validated regression loop. The durable advantage is increasingly the control plane that can reroute, rebudget, and retest rapidly changing models."
+}
