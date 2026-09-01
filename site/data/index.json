@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-01",
+      "displayDate": "Tuesday, September 1, 2026",
+      "signal": "Today’s strongest signal is that the AI stack is replacing implicit behavior with explicit runtime boundaries: frontier training environments are being hardened like production infrastructure, world models are separating reasoning from rendering, custom accelerators are being absorbed into shared rack-scale fabrics, agent authorization is moving to every tool invocation, and post-training is increasingly grounded in real execution traces."
+    },
+    {
       "date": "2026-08-31",
       "displayDate": "Monday, August 31, 2026",
       "signal": "Today’s strongest signal is that AI engineering is becoming adaptive at every layer: provider access can change underneath developer tools, speech is moving into specialized real-time model endpoints, RL post-training can use weaker models to preserve exploration, MoE inference can allocate experts by task and layer, and agent security testing is evolving from static jailbreak sets into reusable self-improving attack skills."
