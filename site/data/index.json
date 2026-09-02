@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-02",
+      "displayDate": "Wednesday, September 2, 2026",
+      "signal": "Today’s strongest signal is that frontier AI capability is increasingly being shaped by the runtime around the model: safeguarded model tiers, live containment and monitoring, database-style context planning, fine-grained MoE execution, and causal evaluation of retrieved skills are all becoming first-class engineering concerns."
+    },
+    {
       "date": "2026-09-01",
       "displayDate": "Tuesday, September 1, 2026",
       "signal": "Today’s strongest signal is that the AI stack is replacing implicit behavior with explicit runtime boundaries: frontier training environments are being hardened like production infrastructure, world models are separating reasoning from rendering, custom accelerators are being absorbed into shared rack-scale fabrics, agent authorization is moving to every tool invocation, and post-training is increasingly grounded in real execution traces."
