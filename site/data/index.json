@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-03",
+      "displayDate": "Thursday, September 3, 2026",
+      "signal": "Today’s strongest signal is that AI progress is being won across the full execution stack: cheaper frontier-class models, longer-horizon coding harnesses, gated cyber capability, adversarial pressure on retrieval systems, and systems-aware RL scaling all make the runtime around the model as important as the weights themselves."
+    },
+    {
       "date": "2026-09-02",
       "displayDate": "Wednesday, September 2, 2026",
       "signal": "Today’s strongest signal is that frontier AI capability is increasingly being shaped by the runtime around the model: safeguarded model tiers, live containment and monitoring, database-style context planning, fine-grained MoE execution, and causal evaluation of retrieved skills are all becoming first-class engineering concerns."
