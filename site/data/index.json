@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-04",
+      "displayDate": "Friday, September 4, 2026",
+      "signal": "Today’s strongest signal is that model progress is being converted into systems leverage: frontier agents are shipping with long-context computer use, open releases are exposing the entire training lifecycle, coding specialization is pairing post-training with test-time refinement, persistent memory is becoming part of the authorization boundary, and models are beginning to control their own attention to cut inference cost."
+    },
+    {
       "date": "2026-09-03",
       "displayDate": "Thursday, September 3, 2026",
       "signal": "Today’s strongest signal is that AI progress is being won across the full execution stack: cheaper frontier-class models, longer-horizon coding harnesses, gated cyber capability, adversarial pressure on retrieval systems, and systems-aware RL scaling all make the runtime around the model as important as the weights themselves."
