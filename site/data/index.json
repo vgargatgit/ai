@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-05",
+      "displayDate": "Saturday, September 5, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is shifting toward layered orchestration: coding runtimes are dynamically composing models, local inference is becoming schedulable across heterogeneous machines, enterprise agents are separating cloud reasoning from governed execution, long-horizon policies are learning when to batch actions, and MoE routers appear to share reusable dynamics across depth."
+    },
+    {
       "date": "2026-09-04",
       "displayDate": "Friday, September 4, 2026",
       "signal": "Today’s strongest signal is that model progress is being converted into systems leverage: frontier agents are shipping with long-context computer use, open releases are exposing the entire training lifecycle, coding specialization is pairing post-training with test-time refinement, persistent memory is becoming part of the authorization boundary, and models are beginning to control their own attention to cut inference cost."
