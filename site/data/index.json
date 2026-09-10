@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-10",
+      "displayDate": "Thursday, September 10, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is moving toward explicit, portable control planes: payment networks are standardizing agent identity, production workflows are separating logic from execution substrate, long-horizon agents are externalizing procedures into self-evolving graphs, safety researchers are turning reward-hacking misgeneralization into a cheaper testbed, and training systems are making heterogeneous hardware placement a searchable runtime decision."
+    },
+    {
       "date": "2026-09-09",
       "displayDate": "Wednesday, September 9, 2026",
       "signal": "Today’s strongest signal is that AI engineering is becoming an orchestration discipline with state outside the model: frontier research is scaling through thousands of coordinated agents plus formal verification, consumer agents are placing effects behind isolated mediators, training recipes are being designed for elastic inference, realistic benchmarks are exposing the gap between coding and shipping agent systems, and multi-agent teams are accumulating coordination state that makes components less fungible than their APIs suggest."
