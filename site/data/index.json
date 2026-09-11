@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-11",
+      "displayDate": "Friday, September 11, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is optimizing the interfaces around capability: model architectures are shrinking state costs, security teams need cross-session abuse telemetry, reusable agent skills can evolve under evaluation budgets, model routing is becoming calibration-driven, and domain foundation models are showing the leverage of carefully aligned data."
+    },
+    {
       "date": "2026-09-10",
       "displayDate": "Thursday, September 10, 2026",
       "signal": "Today’s strongest signal is that AI engineering is moving toward explicit, portable control planes: payment networks are standardizing agent identity, production workflows are separating logic from execution substrate, long-horizon agents are externalizing procedures into self-evolving graphs, safety researchers are turning reward-hacking misgeneralization into a cheaper testbed, and training systems are making heterogeneous hardware placement a searchable runtime decision."
