@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-12",
+      "displayDate": "Saturday, September 12, 2026",
+      "signal": "Today’s strongest signal is that the AI stack is becoming an explicit control-and-evidence system: model endpoints can orchestrate swappable pools, agent harnesses are becoming managed infrastructure, persistent memory needs live-world verification, benchmark rewards need provenance, and sparse-model training is exposing new data-repetition limits."
+    },
+    {
       "date": "2026-09-11",
       "displayDate": "Friday, September 11, 2026",
       "signal": "Today’s strongest signal is that AI engineering is optimizing the interfaces around capability: model architectures are shrinking state costs, security teams need cross-session abuse telemetry, reusable agent skills can evolve under evaluation budgets, model routing is becoming calibration-driven, and domain foundation models are showing the leverage of carefully aligned data."
