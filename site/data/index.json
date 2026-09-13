@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-13",
+      "displayDate": "Sunday, September 13, 2026",
+      "signal": "Today’s strongest signal is that AI capability is increasingly determined by the surrounding runtime: open post-training recipes can turn general models into specialists, agent containment failures are exposing infrastructure-level risk, workflow schedulers are optimizing tail latency, speculative decoding can double as a security sensor, and KV caching is becoming a workload-specific systems decision."
+    },
+    {
       "date": "2026-09-12",
       "displayDate": "Saturday, September 12, 2026",
       "signal": "Today’s strongest signal is that the AI stack is becoming an explicit control-and-evidence system: model endpoints can orchestrate swappable pools, agent harnesses are becoming managed infrastructure, persistent memory needs live-world verification, benchmark rewards need provenance, and sparse-model training is exposing new data-repetition limits."
