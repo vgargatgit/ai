@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-16",
+      "displayDate": "Wednesday, September 16, 2026",
+      "signal": "Today’s strongest signal is that AI systems are specializing across modality, domain, security boundaries, and serving phases: voice models are becoming tool-using runtimes, enterprise models are being post-trained from workflow specifications, expensive reasoning is being compiled into lightweight inference, autonomous attacks are crossing into real data systems, and KV-cache policy is becoming agent-phase aware."
+    },
+    {
       "date": "2026-09-15",
       "displayDate": "Tuesday, September 15, 2026",
       "signal": "Today’s strongest signal is that AI reliability and economics are being decided by boundaries around the model: data contracts determine where frontier APIs can run, long-horizon RL needs trainer–sampler fidelity, RAG adds its own safety surface, coding harnesses materially change behavior and cost, and inference schedulers increasingly optimize against physical thermal state."
