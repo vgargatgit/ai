@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-17",
+      "displayDate": "Thursday, September 17, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is turning implicit model behavior into explicit, testable artifacts: frontier labs are standardizing misalignment disclosure, scientific methods are being packaged as validated agents, performance agents are optimizing entire serving stacks, reward rubrics are being adversarially audited, and sparse-model training is being co-designed with communication-aware kernels."
+    },
+    {
       "date": "2026-09-16",
       "displayDate": "Wednesday, September 16, 2026",
       "signal": "Today’s strongest signal is that AI systems are specializing across modality, domain, security boundaries, and serving phases: voice models are becoming tool-using runtimes, enterprise models are being post-trained from workflow specifications, expensive reasoning is being compiled into lightweight inference, autonomous attacks are crossing into real data systems, and KV-cache policy is becoming agent-phase aware."
