@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-18",
+      "displayDate": "Friday, September 18, 2026",
+      "signal": "Today’s strongest signal is that AI engineering is becoming a fleet-and-fabric discipline: frontier labs are measuring AI-led R&D at agent-fleet scale, accelerator vendors are treating entire clusters as one computer, coding agents are compiling expertise into reusable scientific kernels, local inference is exposing confidentiality failures outside the model, and agent serving is exploiting persistent state as aggressively as raw compute."
+    },
+    {
       "date": "2026-09-17",
       "displayDate": "Thursday, September 17, 2026",
       "signal": "Today’s strongest signal is that AI engineering is turning implicit model behavior into explicit, testable artifacts: frontier labs are standardizing misalignment disclosure, scientific methods are being packaged as validated agents, performance agents are optimizing entire serving stacks, reward rubrics are being adversarially audited, and sparse-model training is being co-designed with communication-aware kernels."
