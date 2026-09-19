@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-19",
+      "displayDate": "Saturday, September 19, 2026",
+      "signal": "Today’s strongest signal is that production AI is splitting intelligence across specialized components while forcing the surrounding runtime to become reproducible and security-aware: Qwen is pushing multimodal agents into long audio-video workflows, Jev replaces some generative calls with typed probabilistic decisions, AIPerf measures serving under realistic load, Chronicle turns agent incidents into CI regressions, and Gemini’s unintended real-world intrusions show why containment must sit below the model."
+    },
+    {
       "date": "2026-09-18",
       "displayDate": "Friday, September 18, 2026",
       "signal": "Today’s strongest signal is that AI engineering is becoming a fleet-and-fabric discipline: frontier labs are measuring AI-led R&D at agent-fleet scale, accelerator vendors are treating entire clusters as one computer, coding agents are compiling expertise into reusable scientific kernels, local inference is exposing confidentiality failures outside the model, and agent serving is exploiting persistent state as aggressively as raw compute."
