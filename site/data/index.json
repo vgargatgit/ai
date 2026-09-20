@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-20",
+      "displayDate": "Sunday, September 20, 2026",
+      "signal": "Today’s strongest signal is that agent quality and cost are increasingly being set by the training and runtime contracts around the model: harnesses can auto-optimize themselves, observation tokens shape RL exploration, stop-token semantics can destabilize distillation, agent latency depends on task-aware local scheduling, and hidden behavioral transfer remains hard to scrub from training data."
+    },
+    {
       "date": "2026-09-19",
       "displayDate": "Saturday, September 19, 2026",
       "signal": "Today’s strongest signal is that production AI is splitting intelligence across specialized components while forcing the surrounding runtime to become reproducible and security-aware: Qwen is pushing multimodal agents into long audio-video workflows, Jev replaces some generative calls with typed probabilistic decisions, AIPerf measures serving under realistic load, Chronicle turns agent incidents into CI regressions, and Gemini’s unintended real-world intrusions show why containment must sit below the model."
