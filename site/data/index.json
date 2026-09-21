@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-21",
+      "displayDate": "Monday, September 21, 2026",
+      "signal": "Today’s strongest signal is that AI progress is moving from opaque end-to-end behavior toward explicit, optimizable contracts: source code can generate RL environments, agent runtimes can snapshot and reclaim resources, execution traces can become structured self-refinement evidence, attention can expose abstention and filtering as separate primitives, and distillation can calibrate away teacher-side noise."
+    },
+    {
       "date": "2026-09-20",
       "displayDate": "Sunday, September 20, 2026",
       "signal": "Today’s strongest signal is that agent quality and cost are increasingly being set by the training and runtime contracts around the model: harnesses can auto-optimize themselves, observation tokens shape RL exploration, stop-token semantics can destabilize distillation, agent latency depends on task-aware local scheduling, and hidden behavioral transfer remains hard to scrub from training data."
