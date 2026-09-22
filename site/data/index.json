@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-22",
+      "displayDate": "Tuesday, September 22, 2026",
+      "signal": "Today’s strongest signal is that AI systems are turning formerly implicit boundaries into explicit contracts: computer-use training is becoming verifiable against running references, distributed inference can hide multi-GPU rank orchestration behind one endpoint, commerce agents are colliding with merchant authorization and identity, open-ended RL is decomposing credit into steps and reusable skills, and specialist scientific systems are combining ensemble diversity with search and domain adaptation."
+    },
+    {
       "date": "2026-09-21",
       "displayDate": "Monday, September 21, 2026",
       "signal": "Today’s strongest signal is that AI progress is moving from opaque end-to-end behavior toward explicit, optimizable contracts: source code can generate RL environments, agent runtimes can snapshot and reclaim resources, execution traces can become structured self-refinement evidence, attention can expose abstention and filtering as separate primitives, and distillation can calibrate away teacher-side noise."
