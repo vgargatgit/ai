@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-23",
+      "displayDate": "Wednesday, September 23, 2026",
+      "signal": "Today’s strongest signal is that the frontier is compressing into the runtime and post-training stack: OpenAI and Anthropic are pushing high-end capability into cheaper models with cache economics tuned for long-lived agents, Xiaomi is opening both weights and large-scale RL machinery, defenders are seeing autonomy move into malware control loops, and inference research is aligning draft-model training directly with serving-time acceptance."
+    },
+    {
       "date": "2026-09-22",
       "displayDate": "Tuesday, September 22, 2026",
       "signal": "Today’s strongest signal is that AI systems are turning formerly implicit boundaries into explicit contracts: computer-use training is becoming verifiable against running references, distributed inference can hide multi-GPU rank orchestration behind one endpoint, commerce agents are colliding with merchant authorization and identity, open-ended RL is decomposing credit into steps and reusable skills, and specialist scientific systems are combining ensemble diversity with search and domain adaptation."
