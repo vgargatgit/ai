@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-09-24",
+      "displayDate": "Thursday, September 24, 2026",
+      "signal": "Today’s strongest signal is that frontier AI is becoming an end-to-end experimental and execution system: agents are producing lab-testable scientific hypotheses, agent RL now needs sandbox fabrics at cloud scale, model labs are co-designing multi-trillion-parameter roadmaps with their own accelerator stacks, self-improving harnesses are being regularized for out-of-distribution transfer, and coding agents are moving behind fail-closed execution boundaries."
+    },
+    {
       "date": "2026-09-23",
       "displayDate": "Wednesday, September 23, 2026",
       "signal": "Today’s strongest signal is that the frontier is compressing into the runtime and post-training stack: OpenAI and Anthropic are pushing high-end capability into cheaper models with cache economics tuned for long-lived agents, Xiaomi is opening both weights and large-scale RL machinery, defenders are seeing autonomy move into malware control loops, and inference research is aligning draft-model training directly with serving-time acceptance."
